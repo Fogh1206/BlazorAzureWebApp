@@ -7,6 +7,7 @@
 
     <ItemGroup>
       <PackageReference Include="ChartJs.Blazor.Fork" Version="2.0.2" />
+      <PackageReference Include="Microsoft.AspNetCore.Components.Analyzers" Version="6.0.0-rc.1.21452.15" />
     </ItemGroup>
 
 </Project>

@@ -57,7 +57,7 @@
           "lib/netcoreapp3.1/Microsoft.AspNetCore.Components.dll": {}
         }
       },
-      "Microsoft.AspNetCore.Components.Analyzers/3.1.8": {
+      "Microsoft.AspNetCore.Components.Analyzers/6.0.0-rc.1.21452.15": {
         "type": "package",
         "build": {
           "buildTransitive/netstandard2.0/Microsoft.AspNetCore.Components.Analyzers.targets": {}
@@ -235,10 +235,10 @@
         "microsoft.aspnetcore.components.nuspec"
       ]
     },
-    "Microsoft.AspNetCore.Components.Analyzers/3.1.8": {
-      "sha512": "ODBBAHa7Kxk85HHf/En3ZYw+oGPb+oosb30PZrrB1gGqDo/qtleHLfdR2XsjOdRyZujesOMX0c/FU0t3hyXRpA==",
+    "Microsoft.AspNetCore.Components.Analyzers/6.0.0-rc.1.21452.15": {
+      "sha512": "P09rDEUJ1w5w3KJPi16mK6lcWCQD7LfoO+OW7N3SEcxGoDj/uW7usS2xEsj9RAl3/XNZoK7J1DAeCY2E8DI+hg==",
       "type": "package",
-      "path": "microsoft.aspnetcore.components.analyzers/3.1.8",
+      "path": "microsoft.aspnetcore.components.analyzers/6.0.0-rc.1.21452.15",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -247,7 +247,7 @@
         "analyzers/dotnet/cs/Microsoft.AspNetCore.Components.Analyzers.dll",
         "build/netstandard2.0/Microsoft.AspNetCore.Components.Analyzers.targets",
         "buildTransitive/netstandard2.0/Microsoft.AspNetCore.Components.Analyzers.targets",
-        "microsoft.aspnetcore.components.analyzers.3.1.8.nupkg.sha512",
+        "microsoft.aspnetcore.components.analyzers.6.0.0-rc.1.21452.15.nupkg.sha512",
         "microsoft.aspnetcore.components.analyzers.nuspec"
       ]
     },
@@ -501,28 +501,31 @@
   },
   "projectFileDependencyGroups": {
     "net5.0": [
-      "ChartJs.Blazor.Fork >= 2.0.2"
+      "ChartJs.Blazor.Fork >= 2.0.2",
+      "Microsoft.AspNetCore.Components.Analyzers >= 6.0.0-rc.1.21452.15"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\krzys\\.nuget\\packages\\": {}
+    "C:\\Users\\esben\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\krzys\\RiderProjects\\Assigment 1\\Assigment 1\\Assigment 1.csproj",
+      "projectUniqueName": "C:\\Users\\esben\\RiderProjects\\BlazorAzureWebApp\\Assigment 1\\Assigment 1.csproj",
       "projectName": "Assigment 1",
-      "projectPath": "C:\\Users\\krzys\\RiderProjects\\Assigment 1\\Assigment 1\\Assigment 1.csproj",
-      "packagesPath": "C:\\Users\\krzys\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\krzys\\RiderProjects\\Assigment 1\\Assigment 1\\obj\\",
+      "projectPath": "C:\\Users\\esben\\RiderProjects\\BlazorAzureWebApp\\Assigment 1\\Assigment 1.csproj",
+      "packagesPath": "C:\\Users\\esben\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\esben\\RiderProjects\\BlazorAzureWebApp\\Assigment 1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\krzys\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\esben\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -544,6 +547,10 @@
           "ChartJs.Blazor.Fork": {
             "target": "Package",
             "version": "[2.0.2, )"
+          },
+          "Microsoft.AspNetCore.Components.Analyzers": {
+            "target": "Package",
+            "version": "[6.0.0-rc.1.21452.15, )"
           }
         },
         "imports": [
@@ -564,7 +571,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -1,6 +1,7 @@
 @page "/"
 @using Assigment_1.Data
 @using Models
+@using System.Security.Claims
 @inject IAdultService AdultService
 @inject NavigationManager NavigationManager;
 
@@ -9,7 +10,15 @@
 
 <div class="container p-3 my-3">
 
-    <h1>Hello, please log in</h1>
+    <AuthorizeView>
+        <NotAuthorized>
+            <h1>Hello! Please login or register a new account.</h1>
+        </NotAuthorized>
+        <Authorized>
+            <h1>Hello @context.User.Identity.Name!</h1>
+            <p>Your security level is: @context.User.FindFirstValue("Level")</p>
+        </Authorized>
+    </AuthorizeView>
    
 </div>
 

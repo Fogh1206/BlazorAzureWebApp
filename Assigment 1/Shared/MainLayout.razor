@@ -1,4 +1,5 @@
 @using LoginComponent
+@using System.Runtime.CompilerServices
 
 @inherits LayoutComponentBase
 
@@ -10,12 +11,25 @@
 
     <div class="main">
         <div class="top-row px-4">
-            <Login/>
-            <a href="https://docs.microsoft.com/aspnet/" target="_blank">About</a>
+            <AuthorizeView>
+                <NotAuthorized>
+                    <a href="Login"> Login </a>
+                    <a href="Register"> Register </a>
+                </NotAuthorized>
+                <Authorized>
+                    <a href="" @onclick="PerformLogout">Log out</a>
+                </Authorized>
+            </AuthorizeView>
         </div>
         <div class="content px-4">
             @Body
         </div>
     </div>
 </div>
+
+@code
+{
+    private Login login;
+    public void PerformLogout() => login.PerformLogout();
+}
 

@@ -140,3 +140,74 @@ C:\Users\krzys\RiderProjects\Assigment 1\Assigment 1\bin\Debug\net5.0\ChartJs.Bl
 C:\Users\krzys\RiderProjects\Assigment 1\Assigment 1\bin\Debug\net5.0\Newtonsoft.Json.dll
 C:\Users\krzys\RiderProjects\Assigment 1\Assigment 1\obj\Debug\net5.0\RazorDeclaration\Pages\AddNew.razor.g.cs
 C:\Users\krzys\RiderProjects\Assigment 1\Assigment 1\obj\Debug\net5.0\Razor\Pages\AddNew.razor.g.cs
+C:\Users\esben\RiderProjects\BlazorAzureWebApp\Assigment 1\obj\Debug\net5.0\Assigment 1.dll
+C:\Users\esben\RiderProjects\BlazorAzureWebApp\Assigment 1\obj\Debug\net5.0\ref\Assigment 1.dll
+C:\Users\esben\RiderProjects\BlazorAzureWebApp\Assigment 1\obj\Debug\net5.0\Assigment 1.pdb
+C:\Users\esben\RiderProjects\BlazorAzureWebApp\Assigment 1\bin\Debug\net5.0\adults.json
+C:\Users\esben\RiderProjects\BlazorAzureWebApp\Assigment 1\bin\Debug\net5.0\appsettings.Development.json
+C:\Users\esben\RiderProjects\BlazorAzureWebApp\Assigment 1\bin\Debug\net5.0\appsettings.json
+C:\Users\esben\RiderProjects\BlazorAzureWebApp\Assigment 1\bin\Debug\net5.0\families.json
+C:\Users\esben\RiderProjects\BlazorAzureWebApp\Assigment 1\bin\Debug\net5.0\users.json
+C:\Users\esben\RiderProjects\BlazorAzureWebApp\Assigment 1\bin\Debug\net5.0\Assigment 1.StaticWebAssets.xml
+C:\Users\esben\RiderProjects\BlazorAzureWebApp\Assigment 1\bin\Debug\net5.0\Assigment 1.exe
+C:\Users\esben\RiderProjects\BlazorAzureWebApp\Assigment 1\bin\Debug\net5.0\Assigment 1.deps.json
+C:\Users\esben\RiderProjects\BlazorAzureWebApp\Assigment 1\bin\Debug\net5.0\Assigment 1.runtimeconfig.json
+C:\Users\esben\RiderProjects\BlazorAzureWebApp\Assigment 1\bin\Debug\net5.0\Assigment 1.runtimeconfig.dev.json
+C:\Users\esben\RiderProjects\BlazorAzureWebApp\Assigment 1\bin\Debug\net5.0\Assigment 1.dll
+C:\Users\esben\RiderProjects\BlazorAzureWebApp\Assigment 1\bin\Debug\net5.0\ref\Assigment 1.dll
+C:\Users\esben\RiderProjects\BlazorAzureWebApp\Assigment 1\bin\Debug\net5.0\Assigment 1.pdb
+C:\Users\esben\RiderProjects\BlazorAzureWebApp\Assigment 1\bin\Debug\net5.0\Assigment 1.Views.dll
+C:\Users\esben\RiderProjects\BlazorAzureWebApp\Assigment 1\bin\Debug\net5.0\Assigment 1.Views.pdb
+C:\Users\esben\RiderProjects\BlazorAzureWebApp\Assigment 1\bin\Debug\net5.0\ChartJs.Blazor.dll
+C:\Users\esben\RiderProjects\BlazorAzureWebApp\Assigment 1\bin\Debug\net5.0\Newtonsoft.Json.dll
+C:\Users\esben\RiderProjects\BlazorAzureWebApp\Assigment 1\obj\Debug\net5.0\Assigment 1.csproj.AssemblyReference.cache
+C:\Users\esben\RiderProjects\BlazorAzureWebApp\Assigment 1\obj\Debug\net5.0\Assigment 1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\esben\RiderProjects\BlazorAzureWebApp\Assigment 1\obj\Debug\net5.0\Assigment 1.AssemblyInfoInputs.cache
+C:\Users\esben\RiderProjects\BlazorAzureWebApp\Assigment 1\obj\Debug\net5.0\Assigment 1.AssemblyInfo.cs
+C:\Users\esben\RiderProjects\BlazorAzureWebApp\Assigment 1\obj\Debug\net5.0\Assigment 1.csproj.CoreCompileInputs.cache
+C:\Users\esben\RiderProjects\BlazorAzureWebApp\Assigment 1\obj\Debug\net5.0\Assigment 1.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\esben\RiderProjects\BlazorAzureWebApp\Assigment 1\obj\Debug\net5.0\Assigment 1.RazorComponent.input.cache
+C:\Users\esben\RiderProjects\BlazorAzureWebApp\Assigment 1\obj\Debug\net5.0\RazorDeclaration\App.razor.g.cs
+C:\Users\esben\RiderProjects\BlazorAzureWebApp\Assigment 1\obj\Debug\net5.0\RazorDeclaration\Pages\AddNew.razor.g.cs
+C:\Users\esben\RiderProjects\BlazorAzureWebApp\Assigment 1\obj\Debug\net5.0\RazorDeclaration\Pages\AdultPage.razor.g.cs
+C:\Users\esben\RiderProjects\BlazorAzureWebApp\Assigment 1\obj\Debug\net5.0\RazorDeclaration\Pages\FetchData.razor.g.cs
+C:\Users\esben\RiderProjects\BlazorAzureWebApp\Assigment 1\obj\Debug\net5.0\RazorDeclaration\Pages\Index.razor.g.cs
+C:\Users\esben\RiderProjects\BlazorAzureWebApp\Assigment 1\obj\Debug\net5.0\RazorDeclaration\Pages\Login.razor.g.cs
+C:\Users\esben\RiderProjects\BlazorAzureWebApp\Assigment 1\obj\Debug\net5.0\RazorDeclaration\Pages\Register.razor.g.cs
+C:\Users\esben\RiderProjects\BlazorAzureWebApp\Assigment 1\obj\Debug\net5.0\RazorDeclaration\Pages\Security.razor.g.cs
+C:\Users\esben\RiderProjects\BlazorAzureWebApp\Assigment 1\obj\Debug\net5.0\RazorDeclaration\Shared\SurveyPrompt.razor.g.cs
+C:\Users\esben\RiderProjects\BlazorAzureWebApp\Assigment 1\obj\Debug\net5.0\RazorDeclaration\_Imports.razor.g.cs
+C:\Users\esben\RiderProjects\BlazorAzureWebApp\Assigment 1\obj\Debug\net5.0\RazorDeclaration\Shared\MainLayout.razor.g.cs
+C:\Users\esben\RiderProjects\BlazorAzureWebApp\Assigment 1\obj\Debug\net5.0\RazorDeclaration\Shared\NavMenu.razor.g.cs
+C:\Users\esben\RiderProjects\BlazorAzureWebApp\Assigment 1\obj\Debug\net5.0\Assigment 1.RazorComponent.output.cache
+C:\Users\esben\RiderProjects\BlazorAzureWebApp\Assigment 1\obj\Debug\net5.0\RazorDeclaration\Assigment 1.dll
+C:\Users\esben\RiderProjects\BlazorAzureWebApp\Assigment 1\obj\Debug\net5.0\Assigment 1.TagHelpers.input.cache
+C:\Users\esben\RiderProjects\BlazorAzureWebApp\Assigment 1\obj\Debug\net5.0\Assigment 1.TagHelpers.output.cache
+C:\Users\esben\RiderProjects\BlazorAzureWebApp\Assigment 1\obj\Debug\net5.0\Assigment 1.RazorCoreGenerate.cache
+C:\Users\esben\RiderProjects\BlazorAzureWebApp\Assigment 1\obj\Debug\net5.0\Razor\App.razor.g.cs
+C:\Users\esben\RiderProjects\BlazorAzureWebApp\Assigment 1\obj\Debug\net5.0\Razor\Pages\AddNew.razor.g.cs
+C:\Users\esben\RiderProjects\BlazorAzureWebApp\Assigment 1\obj\Debug\net5.0\Razor\Pages\AdultPage.razor.g.cs
+C:\Users\esben\RiderProjects\BlazorAzureWebApp\Assigment 1\obj\Debug\net5.0\Razor\Pages\FetchData.razor.g.cs
+C:\Users\esben\RiderProjects\BlazorAzureWebApp\Assigment 1\obj\Debug\net5.0\Razor\Pages\Index.razor.g.cs
+C:\Users\esben\RiderProjects\BlazorAzureWebApp\Assigment 1\obj\Debug\net5.0\Razor\Pages\Login.razor.g.cs
+C:\Users\esben\RiderProjects\BlazorAzureWebApp\Assigment 1\obj\Debug\net5.0\Razor\Pages\Register.razor.g.cs
+C:\Users\esben\RiderProjects\BlazorAzureWebApp\Assigment 1\obj\Debug\net5.0\Razor\Pages\Security.razor.g.cs
+C:\Users\esben\RiderProjects\BlazorAzureWebApp\Assigment 1\obj\Debug\net5.0\Razor\Shared\SurveyPrompt.razor.g.cs
+C:\Users\esben\RiderProjects\BlazorAzureWebApp\Assigment 1\obj\Debug\net5.0\Razor\_Imports.razor.g.cs
+C:\Users\esben\RiderProjects\BlazorAzureWebApp\Assigment 1\obj\Debug\net5.0\Razor\Shared\MainLayout.razor.g.cs
+C:\Users\esben\RiderProjects\BlazorAzureWebApp\Assigment 1\obj\Debug\net5.0\Razor\Shared\NavMenu.razor.g.cs
+C:\Users\esben\RiderProjects\BlazorAzureWebApp\Assigment 1\obj\Debug\net5.0\Razor\Pages\Error.cshtml.g.cs
+C:\Users\esben\RiderProjects\BlazorAzureWebApp\Assigment 1\obj\Debug\net5.0\Razor\Pages\_Host.cshtml.g.cs
+C:\Users\esben\RiderProjects\BlazorAzureWebApp\Assigment 1\obj\Debug\net5.0\Assigment 1.RazorAssemblyInfo.cache
+C:\Users\esben\RiderProjects\BlazorAzureWebApp\Assigment 1\obj\Debug\net5.0\Assigment 1.RazorAssemblyInfo.cs
+C:\Users\esben\RiderProjects\BlazorAzureWebApp\Assigment 1\obj\Debug\net5.0\staticwebassets\Assigment 1.StaticWebAssets.Manifest.cache
+C:\Users\esben\RiderProjects\BlazorAzureWebApp\Assigment 1\obj\Debug\net5.0\staticwebassets\Assigment 1.StaticWebAssets.xml
+C:\Users\esben\RiderProjects\BlazorAzureWebApp\Assigment 1\obj\Debug\net5.0\scopedcss\Shared\MainLayout.razor.rz.scp.css
+C:\Users\esben\RiderProjects\BlazorAzureWebApp\Assigment 1\obj\Debug\net5.0\scopedcss\Shared\NavMenu.razor.rz.scp.css
+C:\Users\esben\RiderProjects\BlazorAzureWebApp\Assigment 1\obj\Debug\net5.0\scopedcss\bundle\Assigment 1.styles.css
+C:\Users\esben\RiderProjects\BlazorAzureWebApp\Assigment 1\obj\Debug\net5.0\scopedcss\projectbundle\Assigment 1.bundle.scp.css
+C:\Users\esben\RiderProjects\BlazorAzureWebApp\Assigment 1\obj\Debug\net5.0\Assigment 1.RazorTargetAssemblyInfo.cache
+C:\Users\esben\RiderProjects\BlazorAzureWebApp\Assigment 1\obj\Debug\net5.0\Assigment 1.RazorTargetAssemblyInfo.cs
+C:\Users\esben\RiderProjects\BlazorAzureWebApp\Assigment 1\obj\Debug\net5.0\Assigment 1.Views.pdb
+C:\Users\esben\RiderProjects\BlazorAzureWebApp\Assigment 1\obj\Debug\net5.0\Assigment 1.csproj.CopyComplete
+C:\Users\esben\RiderProjects\BlazorAzureWebApp\Assigment 1\obj\Debug\net5.0\Assigment 1.genruntimeconfig.cache

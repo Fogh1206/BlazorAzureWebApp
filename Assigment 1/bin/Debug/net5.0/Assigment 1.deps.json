@@ -34,6 +34,7 @@
       "Assigment 1/1.0.0": {
         "dependencies": {
           "ChartJs.Blazor.Fork": "2.0.2",
+          "Microsoft.AspNetCore.Components.Analyzers": "6.0.0-rc.1.21452.15",
           "Microsoft.AspNetCore.Antiforgery": "5.0.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "5.0.0.0",
           "Microsoft.AspNetCore.Authentication.Cookies": "5.0.0.0",
@@ -351,11 +352,11 @@
       "Microsoft.AspNetCore.Components/3.1.8": {
         "dependencies": {
           "Microsoft.AspNetCore.Authorization": "3.1.8",
-          "Microsoft.AspNetCore.Components.Analyzers": "3.1.8",
+          "Microsoft.AspNetCore.Components.Analyzers": "6.0.0-rc.1.21452.15",
           "Microsoft.JSInterop": "3.1.8"
         }
       },
-      "Microsoft.AspNetCore.Components.Analyzers/3.1.8": {},
+      "Microsoft.AspNetCore.Components.Analyzers/6.0.0-rc.1.21452.15": {},
       "Microsoft.AspNetCore.Components.Forms/3.1.8": {
         "dependencies": {
           "Microsoft.AspNetCore.Components": "3.1.8"
@@ -2124,12 +2125,12 @@
       "path": "microsoft.aspnetcore.components/3.1.8",
       "hashPath": "microsoft.aspnetcore.components.3.1.8.nupkg.sha512"
     },
-    "Microsoft.AspNetCore.Components.Analyzers/3.1.8": {
+    "Microsoft.AspNetCore.Components.Analyzers/6.0.0-rc.1.21452.15": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-ODBBAHa7Kxk85HHf/En3ZYw+oGPb+oosb30PZrrB1gGqDo/qtleHLfdR2XsjOdRyZujesOMX0c/FU0t3hyXRpA==",
-      "path": "microsoft.aspnetcore.components.analyzers/3.1.8",
-      "hashPath": "microsoft.aspnetcore.components.analyzers.3.1.8.nupkg.sha512"
+      "sha512": "sha512-P09rDEUJ1w5w3KJPi16mK6lcWCQD7LfoO+OW7N3SEcxGoDj/uW7usS2xEsj9RAl3/XNZoK7J1DAeCY2E8DI+hg==",
+      "path": "microsoft.aspnetcore.components.analyzers/6.0.0-rc.1.21452.15",
+      "hashPath": "microsoft.aspnetcore.components.analyzers.6.0.0-rc.1.21452.15.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Components.Forms/3.1.8": {
       "type": "package",

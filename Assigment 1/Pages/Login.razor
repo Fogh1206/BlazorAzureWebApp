@@ -14,7 +14,6 @@
         </div>
         <div style="color:red">@errorMessage</div>
         <a href="" @onclick="PerformLogin"> Login </a>
-        <a href="" @onclick="PerformRegister"> Register </a>
     </NotAuthorized>
     <Authorized>
         <a href="" @onclick="PerformLogout"> Log out, @context.User.Identity.Name </a>
@@ -34,7 +33,7 @@
             ((CustomAuthenticationStateProvider) AuthenticationStateProvider).ValidateLogin(username, password);
             username = "";
             password = "";
-            NavigationManager.NavigateTo("/fetchData");
+            NavigationManager.NavigateTo("/");
         }
         catch (Exception e)
         {
@@ -56,10 +55,4 @@
         {
         }
     }
-
-    private void PerformRegister()
-    {
-        NavigationManager.NavigateTo("/register");
-    }
-
 }
