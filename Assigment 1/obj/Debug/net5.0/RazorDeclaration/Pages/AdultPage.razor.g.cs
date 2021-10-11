@@ -96,6 +96,13 @@ using Models;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 3 "C:\Users\krzys\RiderProjects\Assigment 1\Assigment 1\Pages\AdultPage.razor"
+           [Authorize(Policy = "SecurityLevel4")]
+
+#line default
+#line hidden
+#nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/AdultPage")]
     [Microsoft.AspNetCore.Components.RouteAttribute("/AdultPage/{Id:int}")]
     public partial class AdultPage : Microsoft.AspNetCore.Components.ComponentBase
@@ -106,12 +113,12 @@ using Models;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 49 "C:\Users\krzys\RiderProjects\Assigment 1\Assigment 1\Pages\AdultPage.razor"
+#line 47 "C:\Users\krzys\RiderProjects\Assigment 1\Assigment 1\Pages\AdultPage.razor"
        
 
 
     string mainClass { get; set; }
-    string secondaryClass   { get; set; }
+    string secondaryClass { get; set; }
 
     [Parameter]
     public int Id { get; set; }
@@ -141,7 +148,7 @@ using Models;
 
     private void Remove()
     {
-        Console.WriteLine(mainClass+"sasad");
+        Console.WriteLine(mainClass + "sasad");
         if (!mainClass.Equals("hidden"))
         {
             secondaryClass = "";
@@ -156,7 +163,6 @@ using Models;
 
     private void Confirm()
     {
-       
         AdultService.Remove(Adult.Id);
         mainClass = "";
         NavigationManager.NavigateTo("/fetchdata");

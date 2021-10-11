@@ -1,6 +1,10 @@
 ﻿@page "/fetchdata"
 
 @using Assigment_1.Data
+@using ChartJs.Blazor
+@using ChartJs.Blazor.Common
+@using ChartJs.Blazor.PieChart
+@using ChartJs.Blazor.Util
 @using Models
 @inject IAdultService AdultService
 @inject NavigationManager NavigationManager;
@@ -9,10 +13,14 @@
 <div id="block_container">
     <label for="search">Name To search:</label><br>
     <input type="text" @bind="@SearchPhrase" @oninput="@((e) => { SearchPhrase = (string) e.Value; })"><br>
-    <input type="submit" value="Submit" @onclick="Search">
+    <input type="submit" value="Search" @onclick="Search">
+    <input type="submit" value="Show All" @onclick="Backer">
+</div>
+<div style="display:flex; flex-direction: row; justify-content: center; align-items: center">
+    <Chart Width="_width" Config="_config"></Chart> 
 </div>
 
-@if (Adults == null)
+@if (AdultsShown == null)
 {
     <p>
         <em>Loading...</em>
@@ -20,7 +28,7 @@
 }
 else
 {
-    <table class="table">
+    <table class="table" id="datatable">
         <thead>
         <tr>
             <th>FirstName</th>
@@ -35,9 +43,9 @@ else
         </tr>
         </thead>
         <tbody>
-        @foreach (var adult in Adults)
+        @foreach (var adult in AdultsShown)
         {
-            <tr @onclick="@(() => NavigateToComponent(adult))">
+            <tr class="onHoverChange" @onclick="@(() => NavigateToComponent(adult))">
                 <td>@adult.FirstName</td>
                 <td>@adult.LastName</td>
                 <td>@adult.HairColor</td>
@@ -51,28 +59,36 @@ else
         }
         </tbody>
     </table>
+  
 }
 
 @code
 {
     [CascadingParameter]
     protected Task<AuthenticationState> AuthStat { get; set; }
-    public string SearchPhrase;
+
+    
+    public string SearchPhrase { get; set; }
+    private int? _width = 600;
+    private PieConfig _config;
+    
     public IList<Adult> Adults { get; set; }
+    public IList<Adult> AdultsShown { get; set; }
 
     protected override async Task OnInitializedAsync()
     {
         base.OnInitialized();
         var user = (await AuthStat).User;
+        CreatePie();
         if (!user.Identity.IsAuthenticated)
         {
-            Console.WriteLine("1serw");
             NavigationManager.NavigateTo($"/Login");
         }
         else
         {
-            Console.WriteLine("2str");
             Adults = AdultService.AdultsList;
+            AdultsShown = Adults;
+            PopulatePie();
         }
     }
 
@@ -83,7 +99,72 @@ else
 
     private void Search()
     {
-        NavigationManager.NavigateTo("SearchResult/" + SearchPhrase);
-        Console.WriteLine("Hello");
+        AdultsShown = new List<Adult>();
+        foreach (Adult adult in Adults)
+        {
+            if (adult.FirstName.Contains(SearchPhrase) || adult.LastName.Contains(SearchPhrase))
+            {
+                AdultsShown.Add(adult);
+            }
+        }
+        SearchPhrase = "";
+        _config.Data.Datasets.Clear();
+        PopulatePie();
+    }
+
+    private void CreatePie()
+    {
+        _config = new PieConfig
+        {
+            Options = new PieOptions
+            {
+               
+                Responsive = false,
+                Title = new OptionsTitle
+                {
+                    Display = true,
+                    Text = "Male to Female Ratio"
+                }
+            }
+        };
+
+        foreach (string color in new[] {"Male", "Female"})
+        {
+            _config.Data.Labels.Add(color);
+        }
+    }
+
+    private void PopulatePie()
+    {
+        int male = 0;
+        int female = 0;
+        foreach (var adult in AdultsShown)
+        {
+            if (adult.Sex.Equals("M"))
+            {
+                male += 1;
+            }
+            else
+            {
+                female += 1;
+            }
+        }
+
+        PieDataset<int> dataset = new PieDataset<int>(new[] {male, female})
+        {
+            BackgroundColor = new[]
+            {
+                ColorUtil.ColorHexString(255, 99, 132),
+                ColorUtil.ColorHexString(255, 205, 86),
+            }
+        };
+        _config.Data.Datasets.Add(dataset);
+    }
+
+    private void Backer()
+    {
+        AdultsShown = Adults;
+        _config.Data.Datasets.Clear();
+        PopulatePie();
     }
 }

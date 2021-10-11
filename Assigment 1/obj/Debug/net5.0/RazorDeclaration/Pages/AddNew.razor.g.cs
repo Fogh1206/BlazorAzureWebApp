@@ -83,22 +83,28 @@ using Assigment_1.Shared;
 #line hidden
 #nullable disable
 #nullable restore
-#line 6 "C:\Users\krzys\RiderProjects\Assigment 1\Assigment 1\Pages\SearchResult.razor"
+#line 3 "C:\Users\krzys\RiderProjects\Assigment 1\Assigment 1\Pages\AddNew.razor"
 using Assigment_1.Data;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 7 "C:\Users\krzys\RiderProjects\Assigment 1\Assigment 1\Pages\SearchResult.razor"
+#line 4 "C:\Users\krzys\RiderProjects\Assigment 1\Assigment 1\Pages\AddNew.razor"
 using Models;
 
 #line default
 #line hidden
 #nullable disable
-    [Microsoft.AspNetCore.Components.RouteAttribute("/SearchResult")]
-    [Microsoft.AspNetCore.Components.RouteAttribute("/SearchResult/{Id}")]
-    public partial class SearchResult : Microsoft.AspNetCore.Components.ComponentBase
+#nullable restore
+#line 2 "C:\Users\krzys\RiderProjects\Assigment 1\Assigment 1\Pages\AddNew.razor"
+           [Authorize(Policy = "SecurityLevel2")]
+
+#line default
+#line hidden
+#nullable disable
+    [Microsoft.AspNetCore.Components.RouteAttribute("/AddNew")]
+    public partial class AddNew : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
@@ -106,29 +112,77 @@ using Models;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 58 "C:\Users\krzys\RiderProjects\Assigment 1\Assigment 1\Pages\SearchResult.razor"
- 
-    [Parameter]
-    public string Id { get; set; }
+#line 63 "C:\Users\krzys\RiderProjects\Assigment 1\Assigment 1\Pages\AddNew.razor"
+       
+    public string ErrorMessage { get; set; }
     public IList<Adult> Adults { get; set; }
-    public IList<Adult> AdultsSearched = new List<Adult>();
+
+    public string FirstName { get; set; }
+    public string LastName { get; set; }
+    public string HairColor { get; set; }
+    public string EyeColor { get; set; }
+    public string Age { get; set; }
+    public string Weight { get; set; }
+    public string Height { get; set; }
+    public string Sex { get; set; }
+    public string JobTitle { get; set; }
+    public string Salary { get; set; }
 
     protected override async Task OnInitializedAsync()
     {
         Adults = AdultService.AdultsList;
-        foreach (Adult adult in Adults)
+    }
+
+    public void Edit()
+    {
+        if (Check(FirstName) || Check(LastName) || Check(Age) || Check(HairColor) || Check(EyeColor) || Check(Weight) || Check(Height))
         {
-            if (adult.FirstName.Contains(Id) || adult.LastName.Contains(Id))
+            ErrorMessage = "Please fill all fields";
+        }
+        else
+        {
+            Adult adult = new Adult
             {
-                AdultsSearched.Add(adult);
+                Id = Adults.Count,
+                FirstName = FirstName,
+                LastName = LastName,
+                Age = Int32.Parse(Age),
+                Height = Int32.Parse(Height),
+                Weight = float.Parse(Weight),
+                Sex = Sex,
+                EyeColor = EyeColor,
+                HairColor = HairColor,
+            };
+            if (!Check(JobTitle))
+            {
+                Job job = new Job
+                {
+                    JobTitle = JobTitle,
+                    Salary = Int32.Parse(Salary)
+                };
+                adult.JobTitle = job;
             }
+            else
+            {
+                Job job = new Job
+                {
+                    JobTitle = "Unemployed",
+                    Salary = 0
+                };
+                adult.JobTitle = job;
+            }
+
+            Adults.Add(adult);
+            AdultService.Save();
+            NavigationManager.NavigateTo("/fetchdata");
         }
     }
 
-    private void NavigateToComponent(Adult p)
+    public bool Check(string s)
     {
-        NavigationManager.NavigateTo("AdultPage/" + p.Id);
+        return (s == null || s == String.Empty) ? true : false;
     }
+
 
 #line default
 #line hidden

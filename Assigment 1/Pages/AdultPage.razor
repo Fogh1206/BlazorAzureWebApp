@@ -1,15 +1,13 @@
 ﻿@page "/AdultPage"
 @page "/AdultPage/{Id:int}" 
-
+@attribute [Authorize(Policy = "SecurityLevel4")]
 
 @using Assigment_1.Data
 @using Models
 @inject IAdultService AdultService
 @inject NavigationManager NavigationManager;
 <h3>Adult Info Page</h3>
-<head>
-    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css"/>
-</head>
+
 
 <div class="@mainClass">
     <label for="fname">First name:</label><br>
@@ -38,11 +36,11 @@
     </div>
 </div>
 <div class="@secondaryClass">
+   <p>Are you sure you want to delete @Adult.FirstName @Adult.LastName</p>
     <div >
         <input type="submit" value="Confirm" @onclick="Confirm">
-    </div>
-    <div>
-        //<input type="submit" value="GoBack" @onclick="Remove">
+
+        <input type="submit" value="GoBack" @onclick="Remove">
     </div>
 </div>
 
@@ -50,7 +48,7 @@
 
 
     string mainClass { get; set; }
-    string secondaryClass   { get; set; }
+    string secondaryClass { get; set; }
 
     [Parameter]
     public int Id { get; set; }
@@ -80,7 +78,7 @@
 
     private void Remove()
     {
-        Console.WriteLine(mainClass+"sasad");
+        Console.WriteLine(mainClass + "sasad");
         if (!mainClass.Equals("hidden"))
         {
             secondaryClass = "";
@@ -95,7 +93,6 @@
 
     private void Confirm()
     {
-       
         AdultService.Remove(Adult.Id);
         mainClass = "";
         NavigationManager.NavigateTo("/fetchdata");

@@ -1,8 +1,24 @@
 {
   "version": 2,
-  "dgSpecHash": "shqBPzfqkR4HEHFTExZdBARwhHjpFjwxLAcRD19Ewtsp3Wr9jWSZ72No23HANeHcgT6WEx4PzLs7bEWH9VOM1Q==",
+  "dgSpecHash": "xVAVdfAlko68YvWwCiH8EZ6icqyxbqUl4MMdM9b9IOhE6l7B34VMVq1L0wh1S0cnrzbaSpH4OyPzbkYWd+WXvA==",
   "success": true,
   "projectFilePath": "C:\\Users\\krzys\\RiderProjects\\Assigment 1\\Assigment 1\\Assigment 1.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\krzys\\.nuget\\packages\\chartjs.blazor.fork\\2.0.2\\chartjs.blazor.fork.2.0.2.nupkg.sha512",
+    "C:\\Users\\krzys\\.nuget\\packages\\microsoft.aspnetcore.authorization\\3.1.8\\microsoft.aspnetcore.authorization.3.1.8.nupkg.sha512",
+    "C:\\Users\\krzys\\.nuget\\packages\\microsoft.aspnetcore.components\\3.1.8\\microsoft.aspnetcore.components.3.1.8.nupkg.sha512",
+    "C:\\Users\\krzys\\.nuget\\packages\\microsoft.aspnetcore.components.analyzers\\3.1.8\\microsoft.aspnetcore.components.analyzers.3.1.8.nupkg.sha512",
+    "C:\\Users\\krzys\\.nuget\\packages\\microsoft.aspnetcore.components.forms\\3.1.8\\microsoft.aspnetcore.components.forms.3.1.8.nupkg.sha512",
+    "C:\\Users\\krzys\\.nuget\\packages\\microsoft.aspnetcore.components.web\\3.1.8\\microsoft.aspnetcore.components.web.3.1.8.nupkg.sha512",
+    "C:\\Users\\krzys\\.nuget\\packages\\microsoft.aspnetcore.metadata\\3.1.8\\microsoft.aspnetcore.metadata.3.1.8.nupkg.sha512",
+    "C:\\Users\\krzys\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\krzys\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\3.1.8\\microsoft.extensions.dependencyinjection.3.1.8.nupkg.sha512",
+    "C:\\Users\\krzys\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\3.1.8\\microsoft.extensions.dependencyinjection.abstractions.3.1.8.nupkg.sha512",
+    "C:\\Users\\krzys\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\3.1.8\\microsoft.extensions.logging.abstractions.3.1.8.nupkg.sha512",
+    "C:\\Users\\krzys\\.nuget\\packages\\microsoft.extensions.options\\3.1.8\\microsoft.extensions.options.3.1.8.nupkg.sha512",
+    "C:\\Users\\krzys\\.nuget\\packages\\microsoft.extensions.primitives\\3.1.8\\microsoft.extensions.primitives.3.1.8.nupkg.sha512",
+    "C:\\Users\\krzys\\.nuget\\packages\\microsoft.jsinterop\\3.1.8\\microsoft.jsinterop.3.1.8.nupkg.sha512",
+    "C:\\Users\\krzys\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
   "logs": []
 }
